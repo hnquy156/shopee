@@ -150,6 +150,15 @@
     width: 100%;
 }
 
+.header__notify::after {
+    content: "";
+    position: absolute;
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 6px;
+    top: -30px;
+}
 
 @keyframes headerNotifyGrowth {
     from {
