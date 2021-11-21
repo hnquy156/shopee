@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #ee4d2d;
+    --primary-color-rgba: rgba(238, 77, 45, 1);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+}
+
+* {
+    box-sizing: inherit;
+    /* Để kế thừa box-sizing ở tất cả các thẻ nó chứa */
+}
+
+html {
+    /* HACK 10px, mac dinh trinh duyet font size 16px*/ 
+    /* font size html 100% tuong ung 16px*/ 
+    font-size: 62.5%; 
+    line-height: 1.6rem; /* Set độ cao mặc định cho toàn trang */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* Tự động căn giữa khối này khi nằm trong một khối khác */
+}
+
+.grid__ful-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
