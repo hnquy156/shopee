@@ -4,6 +4,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 
 }
 
@@ -45,4 +46,73 @@ html {
     to {
         opacity: 1;
     }
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
+.modal__body {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Button style */
+/* Những nút dùng chung nên viết ở đây */
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none; /* Đề phòng dùng cho thẻ a */
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: #999;
+    /* filter: brightness(80%); */
 }
