@@ -24,6 +24,7 @@ html {
     line-height: 1.6rem; /* Set độ cao mặc định cho toàn trang */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 .grid {
