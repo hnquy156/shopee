@@ -401,6 +401,7 @@
     border-radius: 2px;
     box-shadow: 0 1px 5px #aaa;
     display: none;
+    animation: fadeIn 0.3s ease-in;
 }
 
 .header__search-history-heading {
@@ -443,6 +444,18 @@
 .header__cart {
     width: 150px;
     text-align: center;
+    position: relative;
+}
+
+.header__cart-wrap {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+    display: block;
 }
 
 .header__cart-icon {
@@ -450,6 +463,44 @@
     color: var(--white-color);
     margin-top: 6px;
 }
+
+.header__cart-list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: -3px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3rem 0 rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in;
+}
+
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: -25px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__cart-list-empty {
+    padding: 24px 0;
+}
+
+.header__cart-empty-img {
+    width: 50%;
+}
+
+.header__cart-list-empty-msg {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    color: var(--text-color);
+}
+
 
 
 /* Authen Modal */
