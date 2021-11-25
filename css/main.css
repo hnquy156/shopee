@@ -37,7 +37,7 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -102,6 +102,10 @@
     background-color: #fafafa;
 }
 
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -153,6 +157,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -217,11 +225,12 @@
     right: 0;
     top: 120%;
     width: 404px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #e3e3e3;
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 28px) top;
     animation: headerNotifyGrowth ease-in 0.23s;
+    border-radius: 2px;
 }
 
 .header__notify::before {
@@ -340,6 +349,15 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    /* Có những trình duyệt cũ khi bọc thẻ a ở ngoài logo
+    thì sẽ có gạch chân, thận chí có màu, nên đề phòng trường hợp này
+    ta thêm CSS cho nó.
+    */
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img {
