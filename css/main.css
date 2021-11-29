@@ -75,10 +75,6 @@
     top: -8px;
 }
 
-.header__navbar-user-item {
-
-}
-
 .header__navbar-user-item a {
     text-decoration: none;
     color: var(--text-color);
@@ -671,10 +667,6 @@
     margin: 0;
 }
 
-.header__cart-item-price-wrap {
-
-}
-
 .header__cart-item-price {
     font-size: 1.4rem;
     font-weight: 400;
@@ -755,14 +747,6 @@
     color: var(--primary-color);
     cursor: pointer;
 }
-
-.auth-form__form {
-
-} 
-
-.auth-form__group {
-
-} 
 
 .auth-form__input {
     width: 100%;
@@ -861,6 +845,10 @@
     background-color: #f5f5f5;
 }
 
+.app_content {
+    padding-top: 36px;
+}
+
 .category {
     background-color: var(--white-color);
     border-radius: 2px;
@@ -870,6 +858,7 @@
     color: var(--text-color);
     font-size: 1.6rem;
     padding: 12px 16px;
+    margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -882,10 +871,6 @@
     padding: 0 0 8px 0;
     list-style: none;
     margin-left: 10px;
-}
-
-.category-item {
-
 }
 
 .category-item--active .category-item__link {
@@ -917,4 +902,75 @@
 .category-item__link:hover {
     color: var(--primary-color);
     right: -4px;
+}
+
+/*  Home sort + filter */
+
+.home-filter {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.04);
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 2px;
+}
+
+.home-filter__label {
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+}
+
+.home-filter__btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-curent {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    flex: 1;
+    display: flex;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+
+.home-filter__page-btn--disabled {
+    background: #f9f9f9;
+    cursor: default;
+}
+
+.home-filter__page-btn--disabled .home-filter__page-icon {
+    color: #ccc;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-icon {
+    margin: auto;
+    font-size: 1.4rem;
+    color: #555;
 }
