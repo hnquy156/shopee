@@ -974,3 +974,195 @@
     font-size: 1.4rem;
     color: #555;
 }
+
+/* Product Item */
+
+.home-product {
+    margin-bottom: 10px;
+}
+
+.home-product-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 10px;
+    background-color: var(--white-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s linear;
+    will-change: transform; 
+    /* Khai báo cho trình duyệt hiểu transform có sự thay đổi để animation mượt hơn*/
+}
+
+.home-product-item:hover {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+.home-product-item__img {
+    /* border: 1px solid var(--border-color); */
+    background-repeat: no-repeat;
+    padding-top: 100%; /* padding top kế thừa 100% width của thẻ cha nên sẽ tạo hình vuông*/
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    margin: 10px 10px 4px;
+    display: block;
+    display: -webkit-box; /* chỉ dạy trên browser có core webkit */
+    -webkit-box-orient: vertical; /* hướng của dòng chữ theo chiều dọc (từ trên xuống từng dòng) */
+    -webkit-line-clamp: 2; /* Dấu ... ở dòng thứ 2 khi chữ tràn hơn 2 dòng*/
+}
+
+.home-product-item__price {
+    display: flex;
+    margin: 0px 10px 0px;
+    align-items: baseline;
+}
+
+.home-product-item__price-old {
+    font-size: 1.3rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.home-product-item__price-current {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.home-product-item__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 10px 0;
+    align-items: baseline;
+}
+
+.home-product-item__like {
+    font-size: 1.3rem;
+}
+
+.home-product-item__liked-icon {
+    display: none;
+    color: #f63d30;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon {
+    display: none;
+}
+
+.home-product-item__like--liked .home-product-item__liked-icon {
+    display: block;
+}
+
+.home-product-item__rating {
+    font-size: 1.0rem;
+    transform: scale(0.8);
+    transform-origin: right;
+    color: #d5d5d5;
+    margin: auto 0 auto auto;
+}
+
+.home-product-item__start--gold {
+    color: var(--start-gold-color);
+}
+
+.home-product-item__sold {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
+.home-product-item__origin {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 3px 10px;
+    color: #595959;
+    font-weight: 300;
+}
+
+.home-product-item__brand {
+    margin-right: auto;
+}
+
+.home-product-item__origin-name {
+
+}
+
+.home-product-item__favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    background-color: currentColor;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-right: 6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.home-product-item__favourite::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    filter: brightness(0.6);
+}
+
+.home-product-item__favourite span {
+    color: var(--white-color);
+}
+
+.home-product-item__favourite i {
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+    color: var(--white-color);
+}
+
+.home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    color: rgba(255, 216, 64, 0.94);
+    background-color: currentColor;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.home-product-item__sale-off::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-width: 0 20px 4px 20px ;
+    border-style: solid;
+    border-color: transparent currentColor transparent currentColor;
+}
+
+.home-product-item__sale-off-percent {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.home-product-item__sale-off-label {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
