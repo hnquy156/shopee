@@ -1183,3 +1183,8 @@
     font-size: 1.3rem;
     line-height: 1.3rem;
 }
+
+.home-product__pagination {
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
