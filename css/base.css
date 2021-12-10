@@ -29,16 +29,7 @@ html {
 }
 
 /* Responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    /* Tự động căn giữa khối này khi nằm trong một khối khác */
-}
 
-.grid__ful-width {
-    width: 100%;
-}
 
 .grid__row {
     display: flex;
