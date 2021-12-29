@@ -298,7 +298,45 @@
                                 </li>
                             </ul>
                         </nav>
+                        <div class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list"></i>    
+                                Bộ lọc tìm kiếm
+                            </h3>
+                            <form action="" class="filter">
+                                <div class="filter__category">
+                                    <p class="filter__item-title">Theo danh mục</p>
+                                    <ul class="category-list">
+                                        <li class="filter__item">
+                                            <input class="filter__item-checkbox cursor-pointer" id="filter__category-checkbox1" type="checkbox" name="">
+                                            <label class="cursor-pointer" for="filter__category-checkbox1">Trang điểm</label>
+                                        </li>
+                                        <li class="filter__item">
+                                            <input class="filter__item-checkbox cursor-pointer" id="filter__category-checkbox2" type="checkbox" name="">
+                                            <label class="cursor-pointer" for="filter__category-checkbox2">Trang điểm</label>
+                                        </li>
+                                        <li class="filter__item">
+                                            <input class="filter__item-checkbox cursor-pointer" id="filter__category-checkbox3" type="checkbox" name="">
+                                            <label class="cursor-pointer" for="filter__category-checkbox3">Trang điểm</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filter__price">
+                                    <p class="filter__item-title">Theo giá</p>
+                                    <div class="filter__price-wrap">
+                                        <input class="filter__price-from filter__item" placeholder="₫ TỪ"/>
+                                        <div class="filter__price-dash filter__item"> - </div>
+                                        <input class="filter__price-to filter__item" placeholder="₫ ĐẾN"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="filter__price-wrap">
+                                    <div class="filter__submit btn btn--primary">ÁP DỤNG</div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
+
                     <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>

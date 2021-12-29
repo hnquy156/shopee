@@ -203,6 +203,11 @@ html {
    color: var(--primary-color);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
 /* Pagination */
 
 .pagination {
