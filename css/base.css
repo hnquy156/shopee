@@ -58,6 +58,10 @@ html {
     width: 83.3333%;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from {
