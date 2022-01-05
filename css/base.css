@@ -42,6 +42,19 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* FLEXBOX */
+.d-flex  {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+
+/* Size */
+.h-100 {
+    height: 100%;
+}
+
 /* Responsive */
 
 
