@@ -241,6 +241,10 @@
         max-width: 100%;
     }
 
+    .m-o-0 {
+        margin-left: 0%;
+    }
+
     .m-o-1 {
         margin-left: 8.33333%;
     }
@@ -391,6 +395,10 @@
     .l-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .l-o-0 {
+        margin-left: 0%;
     }
 
     .l-o-1 {
