@@ -100,6 +100,16 @@
     .header__mobile-search {
         display: block;
     }
+    /* cart page  */
+    .cart__product-prices {
+        justify-content: center;
+        width: 100%;
+    }
+    .cart__product-price-total {
+        justify-content: center;
+        width: 100%;
+    }
+
     .pagination-item {
         margin: 0;
     }

@@ -55,6 +55,15 @@ input[type=number] {
     height: 100%;
 }
 
+.text-right {
+    text-align: right;
+}
+
+.link__shopee {
+    color: #0055aa;
+    cursor: pointer;
+}
+
 /* Responsive */
 
 
