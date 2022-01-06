@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/resposive.css">
+</head>
+<body>
+    <div class="contact__wrap">
+        <div class="contact__title">Đội chăm sóc khách hàng Shopee</div>
+        <div class="contact__subtitle">
+            <span>Chúng tôi muốn lắng nghe câu hỏi và ý kiến đóng góp từ bạn. Hãy phản hồi cho Shopee biết vấn đề của bạn nhé!</span>
+            <br/>
+            <span>Chúng tôi sẽ liên hệ lại bạn trong 24h tiếp theo.</span>
+        </div>
+
+        <form class="contact__form">
+            <h3>Thông tin liên hệ</h3>
+            <div class="form__group">
+                <label class="form__group-title" for="contact-email">Địa chỉ Email của bạn</label>
+                <input type="text" name="" id="contact-email" placeholder="abc@gmail.com" required>
+            </div>
+            <div class="form__group">
+                <label class="form__group-title" for="contact-content">Nội dung phản hồi</label>
+                <textarea name="" id="contact-content" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form__group">
+                <label class="form__group-title" for="contact-file">Đính kèm tệp</label>
+                <input type="file" name="" id="contact-file">
+            </div>
+
+            <button class="form__group-submit btn btn--primary" type="submit">Gửi phản hồi</button>
+        </form>
+    </div>
+</body>
+</html>

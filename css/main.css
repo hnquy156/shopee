@@ -1976,3 +1976,65 @@
     width: 220px;
     padding: 20px 60px;
 }
+
+/* CONTACT PAGE */
+.contact__wrap {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact__title {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin: 64px 0;
+}
+
+.contact__subtitle {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--text-color);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+}
+
+.contact__form h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.form__group textarea,
+.form__group input {
+    min-height: 40px;
+    outline: unset;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.form__group-title {
+    margin-bottom: 10px;
+}
+
+.form__group-submit {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 20px 60px;
+    margin-bottom: 100px;
+}
