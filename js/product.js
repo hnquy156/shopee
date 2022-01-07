@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     
+    resizeProductArea();
+    
     sliderImage();
 
     window.addEventListener('resize', sliderImage);
@@ -48,6 +50,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         function slideCanClick() {
             canClickSlideBtn = true;
         }
+    }
+
+    function resizeProductArea() {
+        const ProductArea = document.querySelector('.product__information');
+        const ImageProductArea = document.querySelector('.product__images');
+        const height = ImageProductArea.offsetHeight;
+        ProductArea.style.height = height + 'px';
     }
 });
 
