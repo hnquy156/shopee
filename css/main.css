@@ -1953,6 +1953,7 @@ transform: translateY(-1px);
 .transport__shipping-change {
     color: #0055aa;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .transport__date {
@@ -1960,6 +1961,44 @@ transform: translateY(-1px);
     font-size: 1.4rem;
     color: #888;
 }
+
+/* Voucher */
+.cart__product-voucher-method {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.product__voucher-title {
+    font-weight: 500;
+}
+
+.product__voucher-unit {
+    outline: none;
+    min-height: 40px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.product__voucher-change {
+    color: #0055aa;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.product__voucher-price {
+
+}
+
+.product__voucher-info {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    color: #888;
+}
+
 
 .cart__product-checkout {
     margin-top: 2px;
@@ -1989,6 +2028,7 @@ transform: translateY(-1px);
     text-transform: uppercase;
     color: #0055aa;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .cart__product-checkout-info {
